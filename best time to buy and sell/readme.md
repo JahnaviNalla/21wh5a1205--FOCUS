@@ -1,4 +1,3 @@
-
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         l = 0
@@ -12,3 +11,4 @@ class Solution:
                 l = r
             r +=1
         return p
+
