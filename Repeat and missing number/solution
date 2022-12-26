@@ -1,0 +1,10 @@
+class Solution:
+    # @param A : tuple of integers
+    # @return a list of integers
+    def repeatedNumber(self, A):
+        n =  len(A)
+        sum1 = n*(n+1)//2
+        s = set(A)
+        a = sum1 - sum(s)
+        b = (sum(A) + a) - sum1
+        return b,a
